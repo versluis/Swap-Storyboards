@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D2FB39F51D3925330018A381"
+               BuildableName = "Swap Storyboards.app"
+               BlueprintName = "Swap Storyboards"
+               ReferencedContainer = "container:Swap Storyboards.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D2FB3A0E1D3925330018A381"
+               BuildableName = "Swap StoryboardsTests.xctest"
+               BlueprintName = "Swap StoryboardsTests"
+               ReferencedContainer = "container:Swap Storyboards.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D2FB3A191D3925330018A381"
+               BuildableName = "Swap StoryboardsUITests.xctest"
+               BlueprintName = "Swap StoryboardsUITests"
+               ReferencedContainer = "container:Swap Storyboards.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D2FB39F51D3925330018A381"
+            BuildableName = "Swap Storyboards.app"
+            BlueprintName = "Swap Storyboards"
+            ReferencedContainer = "container:Swap Storyboards.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D2FB39F51D3925330018A381"
+            BuildableName = "Swap Storyboards.app"
+            BlueprintName = "Swap Storyboards"
+            ReferencedContainer = "container:Swap Storyboards.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D2FB39F51D3925330018A381"
+            BuildableName = "Swap Storyboards.app"
+            BlueprintName = "Swap Storyboards"
+            ReferencedContainer = "container:Swap Storyboards.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

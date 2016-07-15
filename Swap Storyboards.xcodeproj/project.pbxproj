@@ -15,6 +15,8 @@
 		D2FB3A091D3925330018A381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FB3A071D3925330018A381 /* LaunchScreen.storyboard */; };
 		D2FB3A141D3925330018A381 /* Swap_StoryboardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FB3A131D3925330018A381 /* Swap_StoryboardsTests.m */; };
 		D2FB3A1F1D3925330018A381 /* Swap_StoryboardsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FB3A1E1D3925330018A381 /* Swap_StoryboardsUITests.m */; };
+		D2FB3A2D1D39271A0018A381 /* Portrait.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FB3A2C1D39271A0018A381 /* Portrait.storyboard */; };
+		D2FB3A2F1D3927240018A381 /* Landscape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FB3A2E1D3927240018A381 /* Landscape.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		D2FB3A1A1D3925330018A381 /* Swap StoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swap StoryboardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FB3A1E1D3925330018A381 /* Swap_StoryboardsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Swap_StoryboardsUITests.m; sourceTree = "<group>"; };
 		D2FB3A201D3925330018A381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2FB3A2C1D39271A0018A381 /* Portrait.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Portrait.storyboard; sourceTree = "<group>"; };
+		D2FB3A2E1D3927240018A381 /* Landscape.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landscape.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				D2FB39FD1D3925330018A381 /* AppDelegate.m */,
 				D2FB39FF1D3925330018A381 /* ViewController.h */,
 				D2FB3A001D3925330018A381 /* ViewController.m */,
+				D2FB3A2C1D39271A0018A381 /* Portrait.storyboard */,
+				D2FB3A2E1D3927240018A381 /* Landscape.storyboard */,
 				D2FB3A021D3925330018A381 /* Main.storyboard */,
 				D2FB3A051D3925330018A381 /* Assets.xcassets */,
 				D2FB3A071D3925330018A381 /* LaunchScreen.storyboard */,
@@ -243,9 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FB3A2F1D3927240018A381 /* Landscape.storyboard in Resources */,
 				D2FB3A091D3925330018A381 /* LaunchScreen.storyboard in Resources */,
 				D2FB3A061D3925330018A381 /* Assets.xcassets in Resources */,
 				D2FB3A041D3925330018A381 /* Main.storyboard in Resources */,
+				D2FB3A2D1D39271A0018A381 /* Portrait.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
