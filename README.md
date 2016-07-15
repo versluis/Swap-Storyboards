@@ -7,6 +7,8 @@ This demo makes use of detecting device rotation via size classes as explained h
 
 Storyboards can be loaded on a per ViewController basis. The only peculiraity is the first launch scenario: 
 to make sure the correct storyboard for the rotation after launch is used, we need the additional code in AppDelegate.
+
+
 It's currently iPad only - I may add iPhone screen sizes when I find the time.
 
 For yash. Hope this helps :-)
