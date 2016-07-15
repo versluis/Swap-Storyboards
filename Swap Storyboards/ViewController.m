@@ -17,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // on first run, make sure to check for rotation manually
+    // [self checkHeight];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +41,33 @@
     return storyboard;
 }
 
+- (void)checkHeight {
+    
+    // determine screen size
+    int screenHeight = [UIScreen mainScreen].bounds.size.height;
+    UIStoryboard *storyboard;
+    
+    // grab storyboard accordingly
+    switch (screenHeight) {
+            
+            // portrait
+        case 1024:
+            storyboard = [self grabPortraitStoryboard];
+            break;
+            
+            // landscape
+            case 768:
+            storyboard = [self grabLandscapeStoryboard];
+            break;
+            
+        default:
+            break;
+    }
+    
+    // and display the storyboard
+    AppDelegate *myAppDelegate = [UIApplication sharedApplication].delegate;
+    [myAppDelegate switchStoryboardWith:storyboard];
+}
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id)coordinator {
     
@@ -63,8 +92,7 @@
             storyboard = [self grabPortraitStoryboard];
             
             // and display it
-            myAppDelegate.window.rootViewController = [storyboard instantiateInitialViewController];
-            [myAppDelegate.window makeKeyAndVisible];
+            [myAppDelegate switchStoryboardWith:storyboard];
 
         }
         
@@ -76,8 +104,7 @@
             storyboard = [self grabLandscapeStoryboard];
             
             // and display it
-            myAppDelegate.window.rootViewController = [storyboard instantiateInitialViewController];
-            [myAppDelegate.window makeKeyAndVisible];
+            [myAppDelegate switchStoryboardWith:storyboard];
         }
         
         // will execute after rotation

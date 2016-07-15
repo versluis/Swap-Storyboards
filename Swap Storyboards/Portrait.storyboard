@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="gLn-WG-M7K">
             <objects>
-                <viewController id="Gve-dR-PAM" sceneMemberID="viewController">
+                <viewController id="Gve-dR-PAM" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7fE-ow-Hgp"/>
                         <viewControllerLayoutGuide type="bottom" id="6te-nt-No1"/>

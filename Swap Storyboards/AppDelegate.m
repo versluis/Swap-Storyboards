@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // display the appropriate storyboard after launch (only called once)
+    [self checkHeight];
+    
     return YES;
 }
 
@@ -40,6 +44,51 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)switchStoryboardWith:(UIStoryboard *)storyboard {
+    
+    self.window.rootViewController = [storyboard instantiateInitialViewController];
+    [self.window makeKeyAndVisible];
+}
+
+- (void)checkHeight {
+    
+    // determine screen size
+    int screenHeight = [UIScreen mainScreen].bounds.size.height;
+    UIStoryboard *storyboard;
+    
+    // grab storyboard accordingly
+    switch (screenHeight) {
+            
+            // portrait
+        case 1024:
+            storyboard = [self grabPortraitStoryboard];
+            break;
+            
+            // landscape
+        case 768:
+            storyboard = [self grabLandscapeStoryboard];
+            break;
+            
+        default:
+            break;
+    }
+    
+    // and display the storyboard
+    [self switchStoryboardWith:storyboard];
+}
+
+- (UIStoryboard *)grabPortraitStoryboard {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Portrait" bundle:nil];
+    return storyboard;
+}
+
+- (UIStoryboard *)grabLandscapeStoryboard {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Landscape" bundle:nil];
+    return storyboard;
 }
 
 @end
