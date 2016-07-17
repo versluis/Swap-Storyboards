@@ -18,10 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-fr-ca0">
-                                <rect key="frame" x="215" y="267" width="171" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="171" id="Mdj-hn-JJM"/>
-                                </constraints>
+                                <rect key="frame" x="226" y="282" width="147" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,9 +26,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Aed-fr-ca0" firstAttribute="top" secondItem="6Fx-E6-MqG" secondAttribute="bottom" constant="247" id="Whg-5m-Gg2"/>
-                            <constraint firstItem="Aed-fr-ca0" firstAttribute="centerX" secondItem="8Fx-a3-Neh" secondAttribute="centerX" id="YAz-Hb-ted"/>
-                            <constraint firstItem="Aed-fr-ca0" firstAttribute="centerY" secondItem="8Fx-a3-Neh" secondAttribute="centerY" id="ntp-J2-Kjq"/>
+                            <constraint firstItem="Aed-fr-ca0" firstAttribute="centerY" secondItem="8Fx-a3-Neh" secondAttribute="centerY" id="PvD-Iv-Vxj"/>
+                            <constraint firstItem="Aed-fr-ca0" firstAttribute="centerX" secondItem="8Fx-a3-Neh" secondAttribute="centerX" id="byU-6P-4sz"/>
                         </constraints>
                     </view>
                 </viewController>
