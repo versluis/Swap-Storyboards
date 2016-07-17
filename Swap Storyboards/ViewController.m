@@ -54,27 +54,54 @@
         UIStoryboard *storyboard;
         AppDelegate *myAppDelegate = [UIApplication sharedApplication].delegate;
         
-        // are we in portrait mode?
-        if (size.height == 1024) {
-            NSLog(@"We're in portrait mode");
+        // are we on iPad?
+        if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
             
-            // grab portrait storyboard
-            storyboard = [self grabPortraitStoryboard];
+            // are we in iPad portrait mode?
+            if (size.height == 1024) {
+                NSLog(@"We're in portrait mode");
+                
+                // grab portrait storyboard
+                storyboard = [self grabPortraitStoryboard];
+                
+                // and display it
+                [myAppDelegate switchStoryboardWith:storyboard];
+                
+            }
             
-            // and display it
-            [myAppDelegate switchStoryboardWith:storyboard];
-
-        }
+            // are we in iPad landscape mode?
+            if (size.height == 768) {
+                NSLog(@"We're in landscape mode.");
+                
+                // grab landscape storyboard
+                storyboard = [self grabLandscapeStoryboard];
+                
+                // and display it
+                [myAppDelegate switchStoryboardWith:storyboard];
+            }
         
-        // are we in landscape mode?
-        if (size.height == 768) {
-            NSLog(@"We're in landscape mode.");
+        } else {
             
-            // grab landscape storyboard
-            storyboard = [self grabLandscapeStoryboard];
+            // are we in iPhone protrait mode?
+            if (size.height == 320 || size.height == 375 || size.height == 414) {
+                
+                // grab portrait storyboard
+                storyboard = [self grabLandscapeStoryboard];
+                
+                // and display it
+                [myAppDelegate switchStoryboardWith:storyboard];
+            }
             
-            // and display it
-            [myAppDelegate switchStoryboardWith:storyboard];
+            // are we in iPhone landscape mode?
+            if (size.height == 480 || size.height == 568 || size.height == 667 || size.height == 736) {
+                
+                // grab landscape storyboard
+                storyboard = [self grabPortraitStoryboard];
+                
+                // and display it
+                [myAppDelegate switchStoryboardWith:storyboard];
+            }
+            
         }
         
         // will execute after rotation
