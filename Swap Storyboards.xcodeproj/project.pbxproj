@@ -427,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.versluis.Swap-Storyboards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -438,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.versluis.Swap-Storyboards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -506,6 +508,7 @@
 				D2FB3A251D3925330018A381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2FB3A261D3925330018A381 /* Build configuration list for PBXNativeTarget "Swap StoryboardsTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +517,7 @@
 				D2FB3A281D3925330018A381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2FB3A291D3925330018A381 /* Build configuration list for PBXNativeTarget "Swap StoryboardsUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +526,7 @@
 				D2FB3A2B1D3925330018A381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
