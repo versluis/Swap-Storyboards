@@ -61,15 +61,51 @@
     // grab storyboard accordingly
     switch (screenHeight) {
             
-            // portrait
+            // iPad portrait
         case 1024:
             storyboard = [self grabPortraitStoryboard];
             break;
             
-            // landscape
+            // iPad landscape
         case 768:
             storyboard = [self grabLandscapeStoryboard];
             break;
+            
+            // iPhone 6s Plus portrait
+        case 736:
+            storyboard = [self grabPortraitStoryboard];
+            break;
+            
+            // iPhone 6s Plus landscape
+        case 414:
+            storyboard = [self grabLandscapeStoryboard];
+            break;
+            
+            // iPhone 6 portrait
+        case 667:
+            storyboard = [self grabPortraitStoryboard];
+            break;
+            
+            // iPhone 6 landscape
+        case 375:
+            storyboard = [self grabLandscapeStoryboard];
+            break;
+            
+            // iPhone 5s portrait
+        case 568:
+            storyboard = [self grabPortraitStoryboard];
+            break;
+            
+            // iPhone 5s + 4s landscape
+        case 320:
+            storyboard = [self grabLandscapeStoryboard];
+            break;
+            
+            // iPhone 4s portrait
+        case 480:
+            storyboard = [self grabPortraitStoryboard];
+            break;
+            
             
         default:
             break;
